@@ -1,7 +1,10 @@
-# hw08-seed
+# hw08 for Rowenna Gryba
 
-This repo contains the BC Liquor app as a boilerplate for students to add to in Homework 08.
+This repo contains an app I created to look at bearded seal dive data. 
 
-The code and data are from [Dean Attali's tutorial](https://deanattali.com/blog/building-shiny-apps-tutorial). The code can specifically be found [here](https://deanattali.com/blog/building-shiny-apps-tutorial/#12-final-shiny-app-code).
+Note: This is using fake data as the real data hasn't been published yet and I have client requirements around this. 
 
+The app is located at: 
+
+The code is located at:
 
