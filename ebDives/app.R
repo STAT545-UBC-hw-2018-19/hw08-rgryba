@@ -11,7 +11,8 @@ library(shiny)
 library(dplyr)
 library(ggplot2)
 
-eb <- ebMaxDepth
+ebMaxDepth <- read.csv("ebMaxDepth.csv", stringsAsFactors = F)
+ebMaxDepth$time <- as.POSIXct(ebMaxDepth$time)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -47,7 +48,7 @@ server <- function(input, output) {
   })
   output$dive_line <- renderPlot({
     eb_filtered() %>%
-      ggplot(aes(x = time, y = MAX_DEP, colour = as.factor(id)) +
+      ggplot(aes(x = time, y = MAX_DEP, colour = as.factor(id))) +
       geom_path()
   })
 }
