@@ -8,11 +8,12 @@
 #
 
 library(shiny)
-library(dplyr)
 library(ggplot2)
+library(rsconnect)
 
 ebMaxDepth <- read.csv("ebMaxDepth.csv", stringsAsFactors = F)
 ebMaxDepth$time <- as.POSIXct(ebMaxDepth$time)
+
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
