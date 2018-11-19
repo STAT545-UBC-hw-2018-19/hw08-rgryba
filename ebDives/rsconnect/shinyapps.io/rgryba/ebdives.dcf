@@ -5,6 +5,6 @@ account: rgryba
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 578224
-bundleId: 1706812
+bundleId: 1708194
 url: https://rgryba.shinyapps.io/ebdives/
-when: 1542515655.44268
+when: 1542606033.92247

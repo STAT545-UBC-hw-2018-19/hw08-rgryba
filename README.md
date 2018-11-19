@@ -1,10 +1,14 @@
 # hw08 for Rowenna Gryba
 
-This repo contains an app I created to look at bearded seal dive data. 
+## Bearded seal dive depth app
 
-Note: This is using fake data as the real data hasn't been published yet and I have client requirements around this. 
+This repo contains an app I created to look at bearded seal dive data, specifically the maximum dive depth. 
 
-The app is located at: 
+This app allows the user to select the time period of the dive data presented using a slider, select which (or both seals) they would like to see the data for, and tells the user the maximum dive depth during that time period. 
 
-The code is located at:
+## File locations
+The app is located at https://rgryba.shinyapps.io/ebdives/
 
+The code can be found [here](ebDives) 
+
+Note: This is using fake data as the real data hasn't been published yet and I have client requirements around this.
