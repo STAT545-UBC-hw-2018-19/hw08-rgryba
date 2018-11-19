@@ -17,14 +17,12 @@ ebMaxDepth$time <- as.POSIXct(ebMaxDepth$time)
 ebMaxDepth$MAX_DEP <- as.numeric(ebMaxDepth$MAX_DEP)
 
 
-# Define UI for application that draws a histogram
 ui <- fluidPage(
    
    # Application title
    titlePanel("Bearded seal (Erignathus barbatus) Dive Data - Maximum Dive Depth",
               windowTitle = "EB Dive app"),
    
-   # Sidebar with a slider input for number of bins 
    sidebarLayout(
       sidebarPanel(
          sliderInput("dateInput",
@@ -39,7 +37,6 @@ ui <- fluidPage(
                       selected = c(35, 38))
       ),
       
-      # Show a plot of the generated distribution
       mainPanel(
          plotOutput("dive_line"),
          textOutput("max_depth")
@@ -47,7 +44,7 @@ ui <- fluidPage(
    )
 )
 
-# Define server logic required to draw a histogram
+
 server <- function(input, output) {
   eb_filtered <- reactive({
     if (is.null(input$checkGroup)) {
